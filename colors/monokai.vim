@@ -82,7 +82,7 @@ let s:warmgrey    = { "gui": "#75715E", "cterm": "59" }
 
 let s:pink        = { "gui": "#F92772", "cterm": "197" }
 let s:green       = { "gui": "#A6E22D", "cterm": "148" }
-let s:aqua        = { "gui": "#66d9ef", "cterm": "81" }
+let s:aqua        = { "gui": "#4DBEBE", "cterm": "36" }
 let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
 let s:orange      = { "gui": "#FD9720", "cterm": "208" }
 let s:purple      = { "gui": "#ae81ff", "cterm": "141" }
@@ -105,7 +105,7 @@ let s:br_purple   = { "gui": "#B77EE0" }
 let s:br_cyan     = { "gui": "#54CED6" }
 let s:br_white    = { "gui": "#FFFFFF" }
 
-" Highlighting 
+" Highlighting
 " ------------
 
 " editor
@@ -154,7 +154,7 @@ call s:h("Directory",     { "fg": s:aqua })
 call s:h("DiffAdd",       { "fg": s:addfg,      "bg": s:addbg })
 call s:h("DiffDelete",    { "fg": s:delfg,      "bg": s:delbg })
 call s:h("DiffChange",    { "fg": s:changefg,   "bg": s:changebg })
-call s:h("DiffText",      { "fg": s:black,      "bg": s:aqua })
+call s:h("DiffText",      { "bg": s:aqua })
 
 " fold
 call s:h("Folded",        { "fg": s:warmgrey,   "bg": s:darkblack })
@@ -181,10 +181,10 @@ call s:h("Type",          { "fg": s:aqua })
 call s:h("Structure",     { "fg": s:aqua })
 call s:h("StorageClass",  { "fg": s:aqua })
 call s:h("Typedef",       { "fg": s:aqua })
-    
+
 call s:h("Identifier",    { "fg": s:green })
 call s:h("Function",      { "fg": s:green })
-                         
+
 call s:h("Statement",     { "fg": s:pink })
 call s:h("Operator",      { "fg": s:pink })
 call s:h("Label",         { "fg": s:pink })
@@ -198,7 +198,7 @@ call s:h("Include",       { "fg": s:pink })
 call s:h("Define",        { "fg": s:pink })
 call s:h("Macro",         { "fg": s:green })
 call s:h("PreCondit",     { "fg": s:green })
-                           
+
 call s:h("Special",       { "fg": s:red })
 call s:h("SpecialChar",   { "fg": s:pink })
 call s:h("Delimiter",     { "fg": s:pink })
@@ -208,7 +208,7 @@ call s:h("Tag",           { "fg": s:pink })
 
 call s:h("Todo",          { "fg": s:orange,   "format": "bold,italic" })
 call s:h("Comment",       { "fg": s:warmgrey, "format": "italic" })
-                         
+
 call s:h("Underlined",    { "fg": s:green })
 call s:h("Ignore",        {})
 call s:h("Error",         { "fg": s:red, "bg": s:darkred })
@@ -272,7 +272,7 @@ call s:h("jsFutureKeys",        { "fg": s:aqua })
 call s:h("jsBuiltins",          { "fg": s:aqua })
 call s:h("jsStatic",            { "fg": s:aqua })
 call s:h("jsSuper",             { "fg": s:orange, "format": "italic" })
-call s:h("jsFuncArgRest",       { "fg": s:purple, "format": "italic" })                                 
+call s:h("jsFuncArgRest",       { "fg": s:purple, "format": "italic" })
 call s:h("jsFuncArgs",          { "fg": s:orange, "format": "italic" })
 call s:h("jsStorageClass",      { "fg": s:aqua, "format": "italic" })
 call s:h("jsDocTags",           { "fg": s:aqua,   "format": "italic" })
@@ -322,7 +322,7 @@ call s:h("dartConstant",        { "fg": s:purple })
 call s:h("dartBoolean",         { "fg": s:purple })
 call s:h("dartCoreType",        { "fg": s:aqua })
 call s:h("dartType",            { "fg": s:aqua })
-                                 
+
 " HTML
 call s:h("htmlTag",             { "fg": s:white })
 call s:h("htmlEndTag",          { "fg": s:white })
